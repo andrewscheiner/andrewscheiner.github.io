@@ -1,0 +1,72 @@
+<head>
+    <title>Turning Point (Version 1)</title>
+    <link rel="stylesheet" href="turningpoint.css">
+</head>
+
+<h1>
+    Turning Point (Version 1)
+</h1>
+
+<h3>
+    Instructions
+</h3>
+<p>
+    1. Click "ROLL DICE".
+</p>
+<p>
+    2. When entering 1+ numbers, please separate each with one space.
+</p>
+
+<button onclick="play()" id="play">ROLL DICE</button>
+
+<br></br>
+
+<table>
+    <tr>
+        <td id="box1">1</td>
+        <td id="box2">2</td>
+        <td id="box3">3</td>
+        <td id="box4">4</td>
+        <td id="box5">5</td>
+        <td id="box6">6</td>
+        <td id="box7">7</td>
+        <td id="box8">8</td>
+        <td id="box9">9</td>
+        <td id="box10">10</td>
+        <td id="box11">11</td>
+        <td id="box12">12</td>
+    </tr>
+</table>
+
+<p>
+    <h3 id="dice1"></h3>
+    <h3 id="dice1Value" style="display: none;"></h3> 
+</p>
+<p>
+    <h3 id="dice2"></h3>
+    <h3 id="dice2Value" style="display: none;"></h3>   
+</p>
+
+<p>
+    <label for="userBoxes">Enter the numbers of the boxes to close:</label>
+    <input id="userBoxes"></input>
+</p>
+
+<button onclick="closeBoxes()" id="close">CLOSE</button>
+
+<hr>
+<hr>
+
+<h3>
+    Version 1 Notes
+</h3>
+<ul>
+    <li>Created website version of Turning Point</li>
+    <li>Game works as intended.</li>
+    <li>Added CSS styling for text, buttons, and boxes</li>
+    <li>If you lose, you are alerted and given reason. Game is reset.</li>
+    <li>If you win, you are alerted, and game is reset.</li>
+    <li>TODO: (1) Make list of rules and implement more. (2) Multiplayer.</li>
+</ul>
+
+<script src="turningpoint.js"></script>
