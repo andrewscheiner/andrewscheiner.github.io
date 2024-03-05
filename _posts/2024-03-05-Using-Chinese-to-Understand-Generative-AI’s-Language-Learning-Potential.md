@@ -1,12 +1,7 @@
-<span class="c13 c10 c3">“Using Chinese to Understand Generative AI’s
-Language Learning Potential”</span>
+<span class="c0">**Written by: Andrew Scheiner & Lauren Johnston**</span>
 
-<span class="c0"></span>
-
-<span class="c0">Written by: Andrew Scheiner & Lauren Johnston</span>
-
-<span class="c0">EDST370: “Education and Emerging Technologies”,
-Dickinson College</span>
+<span class="c0">*EDST370: “Education and Emerging Technologies”,
+Dickinson College*</span>
 
 <span class="c0"></span>
 
@@ -46,7 +41,7 @@ cover a lot, including:</span>
 
 <span class="c0"></span>
 
-<span class="c10 c3">Generative AI and Language Translations</span>
+<span class="c10 c3">**Generative AI and Language Translations**</span>
 
 <span class="c0"></span>
 
@@ -116,7 +111,7 @@ responses and comparing the models to one another.</span>
 
 <span class="c0"></span>
 
-<span class="c13 c10 c3">Translation Specifics</span>
+<span class="c13 c10 c3">**Translation Specifics**</span>
 
 <span class="c0"></span>
 
@@ -134,8 +129,6 @@ how to translate what you want it to! We won’t be diving into the idea
 of neural networks here (it’s really complex) but we recommend learning
 more if you are more interested in the software/technology/business side
 of educational technology.</span>
-
-<span class="c0">        </span>
 
 <span class="c3">        The only real caveat to the difference between
 something like Google’s Gemini and its Translate is that Gemini (and all
@@ -155,7 +148,7 @@ it to us to evaluate.</span>
 
 <span class="c0"></span>
 
-<span class="c13 c10 c3">Our Experiment</span>
+<span class="c13 c10 c3">**Our Experiment**</span>
 
 <span class="c10 c3 c13"></span>
 
@@ -187,7 +180,7 @@ ChatGPT in asking it to translate:</span>
 <span class="c0"></span>
 
 <span
-style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 289.33px;"><img src="images/chatGPT.png"
+style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 289.33px;"><img src="https://raw.githubusercontent.com/andrewscheiner/andrewscheiner.github.io/main/assets/genAI_BlogPost/chatGPT.png"
 title="ChatGPT Translating English to Chinese"
 style="width: 624.00px; height: 289.33px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
 alt="ChatGPT translating &quot;so-so&quot; and &quot;it&#39;s a deal&quot; from English to Chinese." /></span>
@@ -210,10 +203,10 @@ correctly, but it also:</span>
 -   <span class="c0">Gave several responses for a translation often
     (formal, informal, additional options) and explained
     differences</span>
--   <span class="c0">Seems more sophisticated answers</span>
+-   <span class="c0">Answers are more sophisticated</span>
 
 <span
-style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 420.00px;"><img src="images/gemini.jpg"
+style="overflow: hidden; display: inline-block; margin: 0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 420.00px;"><img src="https://raw.githubusercontent.com/andrewscheiner/andrewscheiner.github.io/main/assets/genAI_BlogPost/gemini.jpg"
 title="Gemini Translating English to Chinese"
 style="width: 624.00px; height: 420.00px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
 alt="Gemini translating &quot;it&#39;s a deal&quot; from English to Chinese." /></span>
@@ -233,14 +226,14 @@ problem as it might be daunting to try and read a response in only
 Chinese when you are still learning.</span>
 
 <span
-style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 238.67px;"><img src="images/copilot.png"
+style="overflow: hidden; display: inline-block; margin: -0.00px -0.00px; border: 1.33px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 624.00px; height: 238.67px;"><img src="https://raw.githubusercontent.com/andrewscheiner/andrewscheiner.github.io/main/assets/genAI_BlogPost/copilot.png"
 title="Copilot Translating English to Chinese"
 style="width: 624.00px; height: 238.67px; margin-left: 0.00px; margin-top: 0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);"
 alt="Copilot translating &quot;it&#39;s a deal&quot; from English to Chinese." /></span>
 
 <span class="c0"></span>
 
-<span class="c10 c3">Results and Platform Performance</span>
+<span class="c10 c3">**Results and Platform Performance**</span>
 
 <span class="c0"></span>
 
@@ -274,7 +267,7 @@ explication.</span>
 
 <span class="c0"></span>
 
-<span class="c3 c10">Conclusion and What’s Next?</span>
+<span class="c3 c10">**Conclusion and What’s Next?**</span>
 
 <span class="c0"></span>
 
