@@ -38,11 +38,11 @@ function closeBoxes()
     moveSum = move.reduce((a, b) => a + b, 0)
     dListSum = dList.reduce((a, b) => a + b, 0)
 
-    //check validity of input
-    //if sum of guess = sum of guess --> good
-    //if sum of guess <= 12 --> good
-    if(moveSum === dListSum) {
-        if(moveSum <= 12) {
+    //check if doubles were rolled:
+    if(d1 === d2) {
+        //check validity of input
+        //if sum of guess = 2*sum of guess --> good
+        if(moveSum === (dListSum*2)) {
             //for each number the user includes in their move,
             for(let i = 0; i < move.length; i++) {
                 //get box
@@ -61,15 +61,65 @@ function closeBoxes()
                 }
             }
         }
-        //if sum of guess > 12 --> game over
         else {
-            gameOver("The sum of the numbers in your guess were > 12.");
+            //check validity of input
+            //if sum of guess = sum of guess --> also good even with doubles
+            if(moveSum === dListSum) {
+                //for each number the user includes in their move,
+                for(let i = 0; i < move.length; i++) {
+                    //get box
+                    var boxString = "box"+move[i];
+                    var box = document.getElementById(boxString.toString()).innerHTML;
+                    //if box has not been closed yet,
+                    if(parseInt(box) !== 0)
+                    {
+                        //close box
+                        document.getElementById(boxString.toString()).innerHTML = "0";
+                        //make box background black for visual ease
+                        document.getElementById(boxString.toString()).style.backgroundColor = "#000000";
+                    }
+                    else {
+                        gameOver("Box " + move[i] + " was already closed.");
+                    }
+                }
+            }
+            else {
+                gameOver("Your move did not equal the sum or double the sum of the dice rolled.");
+            }
+        }
+            
+    }
+
+    //if doubles were not rolled:
+    else {
+        //check validity of input
+        //if sum of guess = sum of guess --> good
+        if(moveSum === dListSum) {
+            //for each number the user includes in their move,
+            for(let i = 0; i < move.length; i++) {
+                //get box
+                var boxString = "box"+move[i];
+                var box = document.getElementById(boxString.toString()).innerHTML;
+                //if box has not been closed yet,
+                if(parseInt(box) !== 0)
+                {
+                    //close box
+                    document.getElementById(boxString.toString()).innerHTML = "0";
+                    //make box background black for visual ease
+                    document.getElementById(boxString.toString()).style.backgroundColor = "#000000";
+                }
+                else {
+                    gameOver("Box " + move[i] + " was already closed.");
+                }
+            }
+        }
+        //if sum of guess does not equal sum of dice --> game over
+        else {
+            gameOver("The sum of the numbers in your guess were not equal to the sum of the dice rolled.");
         }
     }
-    //if sum of guess does not equal sum of dice --> game over
-    else {
-        gameOver("The sum of the numbers in your guess were not equal to the sum of the dice rolled.");
-    }
+    
+    //clear text, prep for next turn
     clearTPText();
 
     //check if user has won yet
