@@ -1,5 +1,3 @@
-*Andrew Scheiner*
-
 **Conscientiousness in the Software Realm: How can software engineering teams be cognizant about their productivity and how does it relate to their organization?**
 
 **Table of Contents**
