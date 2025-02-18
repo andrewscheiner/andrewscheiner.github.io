@@ -1,22 +1,31 @@
 ---
 layout: page
-title: About
+title: About Me
 permalink: /about/
 ---
-Hello! My name is Andrew Scheiner and thank you for taking the time to check out my new website hosted by GitHub pages.
-I live in Allentown, Pennsylvania and I am currently a junior at Dickinson College (Carlisle, PA) pursuing a B.S. with a double major in both Computer Science and Data Analytics. 
-At school, I am a Resident Advisor, tour guide, and an executive/coach/captain for our club baseball team.
-My experience in my fields of interest includes data analysis and visualization, app and web development, research, and coding through college courses and jobs.
-During Summer 2022, I completed a data analytics internship for Dickinson's athletics department and this past summer (2023), I completed a software development internship at B. Braun Medical working with the R&D Digital Tech department in Allentown. My main task at B. Braun was to work on unit testing and code coverage for their DoseTrac© Enterprise software. In addition, in summer 2023, I presented at the MAA's MathFest in Tampa, Florida for research I completed on investigating the significance of the jumpball in professional basketball.
+Hello! My name is Andrew Scheiner and thank you for taking the time to check out my website hosted by GitHub pages.
+I live in Allentown, Pennsylvania, and I am currently a senior at Dickinson College (Carlisle, PA) pursuing a B.S. with a double major in both Computer Science and Data Analytics. 
 
-My current project is continuing my research on the jumpball in basketball, where I am interested in more advanced factors such as jumper's combine performance, NBA standings (team's records), and betting influences, with my main goal is to get published. In the near future, I plan on doing research revolving around the use of AI to find an optimal strategy at winning "Turning Point" an old math-faceted board game which I recently created an online version of - found on the home page of website under my personal project section. I recommend that you check it out!
+#### Technical Background
+During Summer 2022, I completed a data analytics internship for Dickinson's athletics department where I helped analyze data on recruits and the men's basketball team. For the past two summers (2023 and 2024), I completed a software development internship at B. Braun Medical working with the R&D Digital Tech department in Allentown. My main task at B. Braun was to work on unit testing and code coverage for their DoseTrac© Enterprise software. After school, I will be working for the assessment solution software company called Linkit! in Manhattan (New York City) where I'll be assisting educators daily as a Technical Account Manager, a data science-focused support role.
 
-Some fun facts about me: I am a diehard Texas Rangers fan, I have been playing baseball consistently since I was about five years old, I am a video game enthusiast, and I love working out.
+#### Research
+For the past two years I have worked with Professors Barry Tesman and Eren Bilen at Dickinson to investigate the significance of the tipoff in professional basketball. In August 2023, I presented the first iteration of our work at the MAA's MathFest in Tampa, Florida. This past winter, we finalized our publication on our work which is currently in submission review. We also had a featured article about our work on the Dickinson newsletter (seen on my homepage!).
 
-Please feel free to check out my socials included on the bottom of the page and please email me with any questions you might have!
+In addition, my current project is doing research revolving around the use of neural networks in Python to find an optimal strategy at winning "Turning Point" (also known as Shut the Box) an old math-faceted board game which I recently created an online version of - found on the home page of my website under my personal project section. I recommend that you check it out!
+
+#### School
+At school, I was both a Resident Advisor and a tour guide for two years, and I have been the assistant coach and treasurer for our club baseball team for the past three years too. Also, as of this past winter, I recently became a founding father of an associate chapter of Alpha Epsilon Pi at my school.
+
+#### Fun Facts and Interests
+Some fun facts about me: I am a diehard Texas Rangers fan, I have been playing baseball consistently since I was about five years old, I play disc golf and golf when the weather is nice, and I love working out.
+
+As for the fields I am particularly interested in: I love working on personal projects that involve sports, especially fantasy sports projections and sports betting models. I am also extremely interested in working in fields such as educational and medical software.
+
+Please feel free to check out my socials included on the bottom of the page, and please email me with any questions you might have!
 
 
 ---
 
 
-**Thank you** to the maintainers and contributors at [the Jekyll Minima GitHub repo](https://github.com/jekyll/minima). I relied heavily on their coding concepts to build my site from the ground-up.
+**Thank you** to the maintainers and contributors at [the Jekyll Minima GitHub repo](https://github.com/jekyll/minima). I relied heavily on their coding concepts to build my site from the ground up.
