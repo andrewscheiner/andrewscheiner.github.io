@@ -74,5 +74,5 @@ html_page = f"""
 """
 
 # Save the HTML page to a file
-with open("mlb_2024_runs_given_up.html", "w") as file:
+with open("_includes\PROJECTS\MLBRunsGivenUp\mlb_2024_runs_given_up.html", "w") as file:
     file.write(html_page)
