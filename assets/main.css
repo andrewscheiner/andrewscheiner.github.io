@@ -91,7 +91,12 @@ h6 {
 a {
     font-weight: bold;
     color: #4169e1;
-    text-decoration: none
+    text-decoration: none;
+    display: inline-block;
+    background-color: #04dcdc; /* Slightly lighter than #03CCCC */
+    padding: 5px 10px; /* Small amount of padding */
+    border: 1px solid #000000; /* Solid black border */
+    border-radius: 5px; /* Slightly rounded edges */
 }
 
 a:visited {
@@ -102,6 +107,12 @@ a:visited {
 a:hover {
     color: #4b0082;
     text-decoration: underline
+}
+
+.custom-box {
+    background-color: #03CCCC;
+    padding: 10px;
+    border: 2px solid #000000;
 }
 
 .social-media-list a:hover {
