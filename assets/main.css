@@ -93,10 +93,6 @@ a {
     color: #4169e1;
     text-decoration: none;
     display: inline-block;
-    background-color: #04dcdc; /* Slightly lighter than #03CCCC */
-    padding: 5px 10px; /* Small amount of padding */
-    border: 1px solid #000000; /* Solid black border */
-    border-radius: 5px; /* Slightly rounded edges */
 }
 
 a:visited {
@@ -110,7 +106,7 @@ a:hover {
 }
 
 .custom-box {
-    background-color: #03CCCC;
+    background-color: #70ffff;
     padding: 10px;
     border: 2px solid #000000;
 }
