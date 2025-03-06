@@ -1,0 +1,44 @@
+## Navigating the Tightrope of AI-Writing Checkers
+#### An ethical case study on tools designed to identify AI-written text.
+
+### Table of Contents
+* [Background](#background)
+* [Cases and Accuracy](#cases-and-accuracy)
+* [Discussion](#discussion)
+* [Applying Ethics Codes](#how-can-we-use-ethical-codes-to-help-us-understand-this-issue)
+* [Utilizing Fair Information Practices](#utilizing-the-principles-of-the-fair-information-practices)
+* [Wrap-Up](#wrap-up)
+* [References](#references)
+
+### Background
+In the expansive world of technology, generative artifical intelligence (AI) has blossomed into a tool that is being used by professionals of all disciplines. It has even become a resource for students to find help on school assignments and projects. While students have the potential to use AI as a positive learning assistant, it is clear that AI has created a pathway for cheating. Students can simply ask generative AI platforms like ChatGPT and Microsoft Copilot a specific prompt and ask for an essay on the inputted topic. This is an "easy" workaround for having to spend time doing manual research for an assignment. Sites like ChatGPT can compile massive amounts of information together and output organized text into a seemingly "human-like" response. Out of this, we get the problem of plagarism and cheating in education because of the increased usage and availability of large-language models (LLMs) in a chat-like format.
+
+### Cases and Accuracy
+One way that scholars have attempted to tackle the issue of cheating using generative AI has been to create AI-writing checkers. These are tools similar to sites like [TurnItIn.com](https://www.turnitin.com/) that browse the Internet to detect plagarism in student-submitted work. According to the Markkula Center for Applied Ethics in Santa Clara University, [OpenAI released a program "designed to identify AI-written text."](https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/) This tool was released in January 2023, but was shut down 6 months later because of its model's low rate of accuracy. This was clearly causing an issue due to intricate biases in how the model was being trained. Stanford researchers in May 2023 found that AI detectors were incorrectly finding writing done by [non-native English speakers to be "likely AI generated."](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers) Furthermore, OpenAI disclosed that their classifier:
+- Correctly classified AI-written text 26% of the time
+- Incorrectly labelled human-written text 9% of the time
+
+### Discussion
+It is quite alarming to hear that these AI-writing checkers were performing so poorly with mysterious prejudice, yet interestingly enough, TurnItIn claims to have made a detector that properly finds 97% of generative-AI authored writing with a <1% false positive rate. How can this be? It seems highly unlikely that one company can "successfully" develop an AI-writing detection model while another company, OpenAI (which note is heavily funded by backers like Microsoft), is unable to create their own version that can survive more than 6 months.
+
+With all of this discourse, it is clear there is a push for companies to develop a way to detect student's use of AI instead of producing their own writing and thoughts. And it is important for educators to know when their students are using AI because it's crucial that students are learning and applying efforts in the schooling. But what are the true ethical implications of this? Are these models actually harmful? And can we use already set-in-stone technological principles to help us dissect this issue? Let's dive further.
+
+### How can we use ethical codes to help us understand this issue?
+A critical and popular way to maintain the integrity of technological inventions we use everyday is to refer back to the [software engineering (SWE) code of ethics](https://ethics.acm.org/code-of-ethics/software-engineering-code/). The ACM's SWE code has eight principles meant to benefit the public in the development of software. So why would I try and apply this to the implementation of AI-writing checkers? Well, I want to try and find ethical principles to foster discussion around the issue of using these models to create a safer environment for students and educators when it comes to discipline around generative AI usage.
+
+The first principle in ACM's code revolves around the public's interest. Clause 1.04 states software engineers should "disclose to appropriate persons or authorities any actual or potential danger to the user [or] the public...that they reasonably believe to be associated with software." Any designer of an AI-writing checker should be made clearly aware of the danger to the user/public that an incorrect model has in being implemented. If an AI-writing checker marks a student's work as "likely AI generated", this could result in a student receiving a poor grade or facing disciplinary action such as failing, detention, or explusion. However, as noted earlier in the Stanford research, these checkers do not perform well when reviewing writing from non-native English speakers, which coud put these students at more of a risk. 
+
+Next, moving to the third principle, "Product", it warns engineers to "be careful to use only accurate data derived by ethical and lawful means." The idea of input data into an LLM like ChatGPT or an AI-writing checker often gets overlooked. LLMs are trained on data widely spread out across the Internet, and it is the responsbility of the developer to understand and review the input of their model to ensure it trained on accurate and valid data.
+
+### Utilizing the principles of the Fair Information Practices
+Moreover, I'll continue this conversation around ethics by reviewing the Fair Information Practices, which are eight guidelines to manage information flow in a growing technological climate. These principles mainly focus around an individual's right to understand how their data is used throughout technological products - with a goal of ensuring data privacy is upheld. There are two principles I will highlight that relate to AI-writing checkers: [openness and accountability](https://www.worldprivacyforum.org/2008/01/report-a-brief-introduction-to-fair-information-practices/). Here, these guidelines dictate companies and developers to make data means readily available to the public when requested and being accountable for complying with data privacy measures. Luckily, OpenAI and other AI-writing checker platforms seem to have done a modest job at publishing the findings on the accuracies of their models. However, there is still lots of work to be done to hold LLM companies and developers responsible for the openness of their models' input data and processing, especially when it comes to revising writing. See, LLM's are only as accurate as the data we give it. If we train LLM's on biased data to recognize "it's own" writing, we risk harming students who are geniunely trying to learn and complete assignments.
+
+### Wrap-Up
+While there is much more discourse to be had surrounding the topic of AI-writing checkers and the ethical implications, this article hoped to provide a solid background on the issues and begin some general discussion on how we can use codes and principles to guide safeguards for generative AI. Especially when dealing with educational issues, it is critical that we keep the interests of students and educators as the top priority. Look, plagarism is a clearly an inhibitor of true learning and it is heavily discouraged in education, but educators and education officials must be aware of the harm that using an AI-writing checker can cause. If the models are generating false positives, meaning they are detecting human-written text as AI-generated, this could cause students to wrongly face discipline over their own work. We must be vigilant in monitoring these tools to protect our students and carefully make use of ethics to guide evolving technology made possible by generative AI.
+
+### References
+* [OpenAI: New AI Classifier for AI-Written Text](https://openai.com/index/new-ai-classifier-for-indicating-ai-written-text/)
+* [SCU Background on this Ethical Case Study](https://www.scu.edu/ethics/focus-areas/internet-ethics/resources/ai-writing-detectors/)
+* [Stanford: AI-Detectors Biased Against Non-Native English Writers](https://hai.stanford.edu/news/ai-detectors-biased-against-non-native-english-writers)
+* [SWE Code of Ethics](https://ethics.acm.org/code-of-ethics/software-engineering-code/)
+* [Fair Information Practices](https://www.worldprivacyforum.org/2008/01/report-a-brief-introduction-to-fair-information-practices/)
