@@ -8,19 +8,22 @@ mlb_teams = [
 ]
 
 # Fetch schedule and record data for all MLB teams
-schedule_records = [schedule_and_record(2024, team) for team in mlb_teams]
+schedule_records = [schedule_and_record(2025, team) for team in mlb_teams]
 
 # Concatenate all schedule records into a single DataFrame
 df = pd.concat(schedule_records, ignore_index=True)
+
+#only keep rows with data after Japan series
+#change date to string
+df['Date'] = df['Date'].astype(str)
+#filter out rows with dates before 3/20
+df = df[~((df['Date']=='Tuesday, Mar 18') | (df['Date']=='Wednesday, Mar 19'))]
 
 # Add a column for runs given up (opponent's score)
 df['Runs Allowed'] = df['RA'].astype(int) 
 
 # Group by team and runs given up and count occurrences
 runs_given_up = df.groupby(['Tm', 'Runs Allowed']).size().unstack(fill_value=0)
-
-# #load in runs_given_up
-# runs_given_up = pd.read_csv('runs_given_up.csv', index_col='Tm')
 
 #create column for games played
 #use -1 to keep stats for how many games a team played - need to consider when runs allowed >13
@@ -49,6 +52,9 @@ ryp.update(runs_given_up)
 #sort by matches
 ryp = ryp.sort_values(by='Matches', ascending=False)
 
+# Convert all values in the DataFrame to integers
+ryp = ryp.astype(int)
+
 # Convert the DataFrame to an HTML table
 html_table = ryp.to_html(table_id="runs_given_up_table")
 
@@ -56,7 +62,7 @@ html_table = ryp.to_html(table_id="runs_given_up_table")
 html_page = f"""
 <html>
 <head>
-    <title>MLB 2024 Runs Given Up</title>
+    <title>MLB 2025 Runs Given Up</title>
     <link rel="stylesheet" type="text/css" href="mlb_runs_given_up.css">
     <script src="mlb_rgu.js"></script>
 </head>
@@ -64,8 +70,9 @@ html_page = f"""
     <p> 
         <a href="https://andrewscheiner.github.io">Back to Andrew Scheiner's Website</a>
         <a href="https://runyourpool.com">Run Your Pool</a>
+        <a href="https://andrewscheiner.github.io/_includes/PROJECTS/MLBRunsGivenUp/mlb_2024_runs_given_up.html">2024 Runs Given Up</a>
     </p>
-    <h1>MLB 2024 Runs Given Up</h1>
+    <h1>MLB 2025 Runs Given Up</h1>
     {html_table}
     <p>Data source: <a href="https://baseball-reference.com">Baseball Reference</a>, scraped using <a href="https://github.com/jldbc/pybaseball">Pybaseball</a></p>
     <p class='copyright'>© Andrew Scheiner 2025</p>
@@ -74,5 +81,5 @@ html_page = f"""
 """
 
 # Save the HTML page to a file
-with open("_includes\PROJECTS\MLBRunsGivenUp\mlb_2024_runs_given_up.html", "w") as file:
+with open("_includes\PROJECTS\MLBRunsGivenUp\mlb_2025_runs_given_up.html", "w") as file:
     file.write(html_page)
