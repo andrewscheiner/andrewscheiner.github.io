@@ -2,7 +2,7 @@ name: Update MLB Runs Given Up
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # This will run the workflow daily at midnight UTC
+    - cron: '0 7 * * *'  # This will run the workflow daily at 3:00am Eastern Time (UTC-4/UTC-5 depending on daylight saving)
 
 jobs:
   build:
