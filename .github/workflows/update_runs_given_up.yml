@@ -3,6 +3,8 @@ name: Update MLB Runs Given Up
 on:
   schedule:
     - cron: '0 7 * * *'  # This will run the workflow daily at 3:00am Eastern Time (UTC-4/UTC-5 depending on daylight saving)
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 jobs:
   build:
@@ -28,7 +30,7 @@ jobs:
       - name: Commit and push changes
         run: |
           git config --global user.name 'andrewscheiner'
-          git config --global user.email 'andrewscheinergithub@github.com'
+          git config --global user.email 'andrewscheinergithub@gmail.com'
           git add .
           git commit -m 'Update MLB Runs Given Up'
           git push
