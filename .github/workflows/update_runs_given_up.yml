@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-            pip install bs4==4.11.1 pybaseball pandas notebook nbconvert
+            pip install bs4 pybaseball pandas notebook nbconvert
 
       - name: Execute Jupyter Notebook to Generate HTML
         run: |
