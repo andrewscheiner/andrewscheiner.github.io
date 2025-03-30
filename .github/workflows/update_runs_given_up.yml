@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-            pip install beautifulsoup4==4.11.1 pybaseball pandas notebook nbconvert
+            pip install beautifulsoup4==4.11.1 pybaseball pandas notebook nbconvert datetime
 
       - name: Execute Jupyter Notebook to Generate HTML
         run: |
