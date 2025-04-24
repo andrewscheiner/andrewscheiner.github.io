@@ -1,3 +1,4 @@
+#Imports/packages/libraries
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -14,16 +15,6 @@ response = requests.get(url)
 if response.status_code == 200:
     # Parse the HTML content of the page
     soup = BeautifulSoup(response.content, 'html.parser')
-    
-    # Example: Extract the title of the page
-    page_title = soup.title.string
-    print("Page Title:", page_title)
-    
-    # Example: Extract all table data (if any)
-    tables = soup.find_all('table')
-    for i, table in enumerate(tables):
-        print(f"Table {i+1}:")
-        print(table.prettify())
 else:
     print(f"Failed to retrieve the page. Status code: {response.status_code}")
 

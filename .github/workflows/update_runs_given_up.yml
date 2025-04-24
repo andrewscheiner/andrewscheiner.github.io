@@ -21,7 +21,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-            pip install json requests bs4 pandas re datetime
+            pip install requests bs4 pandas re datetime
 
       - name: Execute Python Script
         run: |
