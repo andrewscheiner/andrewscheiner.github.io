@@ -21,11 +21,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-            pip install beautifulsoup4==4.11.1 pybaseball pandas notebook nbconvert datetime
+            pip install json requests bs4 pandas re datetime
 
-      - name: Execute Jupyter Notebook to Generate HTML
+      - name: Execute Python Script
         run: |
-          jupyter nbconvert --to notebook --execute MLB_runs_given_up.ipynb --output MLB_runs_given_up_executed.ipynb
+          python MLB_runs_given_up.py
 
       - name: Commit and push changes
         run: |
