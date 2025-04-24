@@ -1,4 +1,3 @@
-import json
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
@@ -129,6 +128,7 @@ html_page = f"""
     <p> 
         <a href="https://andrewscheiner.github.io">Back to Andrew Scheiner's Website</a>
         <a href="https://runyourpool.com">Run Your Pool</a>
+        <a href="https://andrewscheiner.github.io/_includes/PROJECTS/MLBRunsGivenUp/mlb_2024_runs_given_up.html">2024 Runs Given Up</a>
     </p>
     <h1>MLB 2025 Runs Given Up</h1>
     <p>Last updated: {now.strftime("%m/%d/%Y %H:%M:%S EST")}</p>
