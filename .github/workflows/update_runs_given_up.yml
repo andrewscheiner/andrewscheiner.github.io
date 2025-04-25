@@ -23,9 +23,10 @@ jobs:
         run: |
             pip install requests bs4 pandas datetime
 
-      - name: Execute Python Script
+      - name: Execute Jupyter Notebook
         run: |
-          python MLB_runs_given_up.py
+          pip install nbconvert
+          jupyter nbconvert --to notebook --execute MLB_runs_given_up.ipynb --output MLB_runs_given_up_executed.ipynb
 
       - name: Commit and push changes
         run: |
