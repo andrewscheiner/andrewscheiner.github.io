@@ -16,11 +16,12 @@ let spacing = 50;
 let p5Canvas;
 
 //correct answers and number of questions
+//Prof. Richeson (Dickinson College) lab answers for MATH171 - 4/30/2025
 let correctAnswers = [
-  "C", "A", "B", "D", "A", "B", 
-  "C", "A", "C", "D", "B", "C", 
-  "A", "D", "B", "C", "A", "D", 
-  "B", "C", "A", "B", "C", "D"
+  "A", "C", "D", "A", "B",
+  "A", "D", "B", "C", "A",
+  "A", "C", "A", "C", "B",
+  "D", "C", "A", "B", "A"
 ];
 let numQs = correctAnswers.length;
 
