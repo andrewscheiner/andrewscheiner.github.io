@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style_rra.css">
+  <meta charset="utf-8" />
+
+</head>
+
+<body>
+  <main>
+    <div>
+      <div class="title-div">
+        <h2>Rapid Response Assessment (RRA)</h2>
+        <h5>&copy Andrew Scheiner 2025</h6>
+        <h4>Prof. Richeson - MATH 171 - Dickinson College</h4>
+        <div class="instructions-box">
+          <h5 class="instructions-title">Instructions</h5>
+          <ul class="instructions-list">
+            <li>For each question, use your mouse to scratch off the correct answer.</li>
+            <li>To scratch off, hold down click and drag with your mouse.</li>
+            <li>When you are finished, click the "Download Your Answers" button at the bottom, save your answers to your
+              computer, and please send it to Prof. Richeson.</li>
+          </ul>
+        </div>
+        <h4>Number of Questions: <span id="question-count"></span></h4>
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const questionCount = correctAnswers.length;
+            document.getElementById("question-count").textContent = questionCount;
+          });
+        </script>
+        <p>
+          <label for="names">Names:</label>
+          <input type="text" id="names" placeholder="Put your names here.">
+        </p>
+        <div id="canvas1" class="canvas-container"
+          style="display: flex; justify-content: center; align-items: center;">
+        </div>
+    </main>
+  <script src="canvas_rra.js"></script>
+  <div style="text-align: center; margin: 20px auto;">
+    <button id="export" onclick="exportCanvas()">Download Your Answers</button>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,72 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: rgb(207, 225, 231); /* Light blue background */
+    color: #003366; /* Dark blue text */
+  }
+  
+  body {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .title-div {
+    margin-bottom: 20px;
+  }
+  
+  button {
+    background: #003366; /* Dark blue button background */
+    color: #fff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: rgb(0, 163, 218); /* Light blue on hover */
+    color: #003366; /* Dark blue text on hover */
+  }
+  
+  .instructions-box {
+    width: 300px;
+    height: 200px;
+    border: 1px solid #003366; /* Dark blue border */
+    padding: 10px;
+    overflow-y: auto;
+    background-color: #fff; /* White background */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    border-radius: 5px;
+  }
+  
+  .instructions-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #003366; /* Dark blue text */
+  }
+  
+  .instructions-list {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #003366; /* Dark blue text */
+  }
+
+  input {
+    color: #003366;
+    padding: 10px 10px;
+    font-size: 16px;
+  }
+
+  label {
+    color: #003366; /* Dark blue text */
+    font-size: 16px;
+  }
