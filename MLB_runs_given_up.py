@@ -112,8 +112,8 @@ html_page = f"""
 <html>
 <head>
     <title>MLB 2025 Runs Given Up</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <script src="mlb.js"></script>
+    <link rel="stylesheet" type="text/css" href="mlb_runs_given_up.css">
+    <script src="mlb_rgu.js"></script>
 </head>
 <body>
     <p> 
