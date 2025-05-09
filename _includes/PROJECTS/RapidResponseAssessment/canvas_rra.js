@@ -1,3 +1,7 @@
+/**
+ * © Andrew Scheiner 2025
+ */
+
 //images and top layer
 let greenCheck;
 let redX;
