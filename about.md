@@ -3,7 +3,7 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hello! My name is Andrew Scheiner and thank you for taking the time to check out my website hosted by GitHub pages. I live in Allentown, Pennsylvania, and I am currently a senior at Dickinson College (Carlisle, PA) pursuing a B.S. with a double major in both Computer Science and Data Analytics. 
+Hello! My name is Andrew Scheiner and thank you for taking the time to check out my website hosted by GitHub pages. I am an incoming Technical Account Manager for LinkIt!, an assessment solution software company in New York City. I recently graduated from Dickinson College with a B.S. in Computer Science and Data Analytics. My experience involves sports analytics, game theory analysis, automated testing, and software development that I have gained through research and internships.
 
 #### Technical Background
 During Summer 2022, I completed a data analytics internship for Dickinson's athletics department where I helped analyze data on recruits and the men's basketball team. For the past two summers (2023 and 2024), I completed a software development internship at B. Braun Medical working with the R&D Digital Tech department in Allentown. My main task at B. Braun was to work on unit testing and code coverage for their DoseTrac© Enterprise software. After school, I will be working for the assessment solution software company called Linkit! in Manhattan (New York City) where I'll be assisting educators daily as a Technical Account Manager, a data science-focused support role.
