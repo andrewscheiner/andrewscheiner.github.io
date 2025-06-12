@@ -1,27 +1,39 @@
+<!--Source for dice roll code: https://www.sourcecodester.com/tutorial/javascript/16441/creating-dice-roll-animation-using-html-css-and-js-tutorial-->
+
 <head>
-    <title>Turning Point (Version 1)</title>
+    <title>Turning Point / Shut the Box</title>
     <link rel="stylesheet" href="turningpoint.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<a href="https://andrewscheiner.github.io/">Back to Andrew Scheiner's Website</a>
+<button onclick="window.location.href='https://andrewscheiner.github.io/'">Back to Andrew Scheiner's Website</button>
+<button onclick="document.getElementById('how-to-play').scrollIntoView({ behavior: 'smooth' });">How to Play and
+    Instructions</button>
 
 <h1>
-    Turning Point (Version 1.1)
+    Turning Point / Shut the Box
 </h1>
-
-<h3>
-    Instructions
-</h3>
-<p>
-    1. Click "ROLL DICE".
-</p>
-<p>
-    2. When entering 1+ numbers, please separate each with one space.
-</p>
 
 <button onclick="play()" id="play">ROLL DICE</button>
 
 <br></br>
+
+<!-- <label>
+    <input type="checkbox" id="showProbabilities">
+    Show Probabilities
+</label> 
+<br></br>
+-->
+<label>
+    <input type="checkbox" id="showValues">
+    Show Game Values
+</label>
+<br></br>
+
 
 <table>
     <tr>
@@ -38,43 +50,177 @@
         <td id="box11">11</td>
         <td id="box12">12</td>
     </tr>
+    <tr>
+        <td id="td_cbox1"><input type="checkbox" id="cbox1"></td>
+        <td id="td_cbox2"><input type="checkbox" id="cbox2"></td>
+        <td id="td_cbox3"><input type="checkbox" id="cbox3"></td>
+        <td id="td_cbox4"><input type="checkbox" id="cbox4"></td>
+        <td id="td_cbox5"><input type="checkbox" id="cbox5"></td>
+        <td id="td_cbox6"><input type="checkbox" id="cbox6"></td>
+        <td id="td_cbox7"><input type="checkbox" id="cbox7"></td>
+        <td id="td_cbox8"><input type="checkbox" id="cbox8"></td>
+        <td id="td_cbox9"><input type="checkbox" id="cbox9"></td>
+        <td id="td_cbox10"><input type="checkbox" id="cbox10"></td>
+        <td id="td_cbox11"><input type="checkbox" id="cbox11"></td>
+        <td id="td_cbox12"><input type="checkbox" id="cbox12"></td>
+    </tr>
 </table>
 
+<div id="dice" class="container-fluid" style="display: none">
+    <div class="d-flex justify-content-evenly align-items-center">
+        <div class="dice-container me-3">
+            <div class="dice" id="dice-1" data-face="2">
+                <div class="dice-face" data-face="1">
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="4">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="6">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+        <div class="dice-container ms-3">
+            <div class="dice" id="dice-2" data-face="3">
+                <div class="dice-face" data-face="1">
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="2">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="3">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="4">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="5">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+                <div class="dice-face" data-face="6">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <p>
-    <h3 id="dice1"></h3>
-    <h3 id="dice1Value" style="display: none;"></h3> 
+<h3 id="dice1"></h3>
+<h3 id="dice1Value" style="display: none;"></h3>
 </p>
 <p>
-    <h3 id="dice2"></h3>
-    <h3 id="dice2Value" style="display: none;"></h3>   
+<h3 id="dice2"></h3>
+<h3 id="dice2Value" style="display: none;"></h3>
 </p>
-
-<p>
-    <label for="userBoxes">Enter the numbers of the boxes to close:</label>
-    <input id="userBoxes"></input>
+<h3 id="sum"></h3>
+<h3 id="sumValue" style="display: none;"></h3>
 </p>
 
 <button onclick="closeBoxes()" id="close">CLOSE</button>
 
 <hr>
+
+<section id='how-to-play'>
+    <h3>How to Play</h3>
+    <ol>
+        <li>Turning Point (aka Shut the Box) is a board game that uses 12 "boxes" and 2 6-sided dice.</li>
+        <li>The game begins with all boxes 1-12 at an "open state" where box 1 equals the number value 1, etc.</li>
+        <li>To play the game, roll two dice and get two values each 1-6. </li>
+        <li>After rolling, sum up the dice. This is the sum you will use, so keep it in mind. If you roll doubles (dice
+            with the same value), you can use
+            either the sum of the dice or twice the sum of the dice.</li>
+        <li>Then, you can "close" any combination of boxes that sum up to the dice sum you are using.</li>
+        <li>Keep rolling the dice and closing boxes until you have either closed all boxes (if all boxes are closed,
+            that means you won!), or cannot close any correct combination.</li>
+    </ol>
+</section>
+
+<section id='how-to-play'>
+    <h3>Example</h3>
+    <ol>
+        <li>Let's say you begin a game with all boxes 1-12 open.</li>
+        <li>Your first roll is 2 and 2. So, you can close any combinations of boxes that sum up to 4 or 8 (4 because
+            2+2=4, and 8 because 4*2=8).</li>
+        <li>So, some example combinations of boxes you could close are: (4), (8), (1, 2, 6), (3, 5), and more.</li>
+        <li>Let's say you close boxes 3 and 5. This means for the rest of the game, you cannot close 3 or 5.</li>
+    </ol>
+</section>
+
+<section>
+    <h3>Instructions</h3>
+    <ol>
+        <li>Click <strong>ROLL DICE</strong>.</li>
+        <li>Select the boxes you want to close by checking the checkboxes below the numbers.</li>
+        <li>Click <strong>CLOSE</strong> to close the boxes you selected.</li>
+    </ol>
+</section>
+
 <hr>
 
-<h3>
-    Version 1.0 Notes
-</h3>
-<ul>
-    <li>Created website version of Turning Point</li>
-    <li>Game works as intended.</li>
-    <li>Added CSS styling for text, buttons, and boxes</li>
-    <li>If you lose, you are alerted and given reason. Game is reset.</li>
-    <li>If you win, you are alerted, and game is reset.</li>
-    <li>TODO: (1) Make list of rules and implement more. (2) Multiplayer.</li>
-</ul>
-<h3>
-    Version 1.1 Notes
-</h3>
-<ul>
-    <li>Added doubles rule! Whenever doubles are rolled, you can play either the sum or twice the sum.</li>
-</ul>
+<section>
+    <h3>Version 2 Notes (most recent - June 2025)</h3>
+    <ul>
+        <li>Instead of entering boxes to close as a typed list, allow users to check off which boxes to close before
+            submitting move.</li>
+        <li>Styling update - specifically made page look more minimalistic.</li>
+        <li>Added dice roll animation! <a
+                href="https://www.sourcecodester.com/tutorial/javascript/16441/creating-dice-roll-animation-using-html-css-and-js-tutorial">Source</a>
+        </li>
+        <li>Update and move how-to-play / instructions rules for users of all experiences.</li>
+        <li>Allow user to toggle showing dice and sum values.</li>
+    </ul>
+    <h3>Version 1.1 Notes</h3>
+    <ul>
+        <li>Added doubles rule! Whenever doubles are rolled, you can play either the sum or twice the sum.</li>
+    </ul>
+    <h3>Version 1.0 Notes</h3>
+    <ul>
+        <li>Created website version of Turning Point</li>
+        <li>Game works as intended.</li>
+        <li>Added CSS styling for text, buttons, and boxes</li>
+        <li>If you lose, you are alerted and given reason. Game is reset.</li>
+        <li>If you win, you are alerted, and game is reset.</li>
+    </ul>
+</section>
 
 <script src="turningpoint.js"></script>

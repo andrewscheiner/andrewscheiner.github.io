@@ -1,32 +1,258 @@
-p {
-    font-size: large;
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Space+Mono&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Tillana:wght@400;600&display=swap');
 
-table, th, td {
-    border: 2px solid black;
-    border-collapse: collapse;
-}
-html * {
-    font-size: 24px;
+html {
     font-family: Nunito, sans-serif;
+    background: #fff;
+    color: #222;
+    font-size: 18px;
 }
 
-td {
-    padding: 10px;
-    font-weight: bold;
-    background-color: lightgreen;
+body {
+    margin: 2em auto;
+    max-width: 700px;
+    padding: 0 1em;
 }
 
-button {
-    border: 3px solid black;
-    background-color: lightpink;
+h1, h3 {
+    font-weight: 600;
+    margin-bottom: 0.5em;
 }
 
 h1 {
-    font-size: 32px;
-    font-weight: bolder;
+    font-size: 2em;
 }
 
-li, a {
-    font-size: 18px;
+h3 {
+    font-size: 1.1em;
+    margin-top: 2em;
+}
+
+p, ul, li {
+    font-size: 1em;
+    margin: 0.5em 0;
+}
+
+table {
+    border-collapse: collapse;
+    margin: 1em 0;
+    width: 100%;
+}
+
+td, th {
+    border: none;
+    background: lightgreen;
+    padding: 0.5em;
+    text-align: center;
+    font-weight: normal;
+    font-size: 1em;
+}
+
+input[type="checkbox"] {
+    transform: scale(1.2);
+}
+
+button {
+    border: none;
+    background: #b2f2a5; /* soft green to match lightgreen */
+    color: #222;
+    padding: 0.5em 1.5em;
+    border-radius: 4px;
+    font-size: 1em;
+    margin: 1em 0.5em 1em 0;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #8be78b;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 2em 0;
+}
+
+/* Source for dice roll code: https://www.sourcecodester.com/tutorial/javascript/16441/creating-dice-roll-animation-using-html-css-and-js-tutorial */
+/* Dice Container */
+ 
+.dice-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    position: relative;
+}
+
+/* Dice Element */
+.dice {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+/* Dice Faces */
+.dice-face {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid #222;
+    border-radius: 8px;
+    background-color: #fff;
+    backface-visibility: hidden;
+}
+
+/* Dice Dots */
+.dot {
+    height: 14px;
+    width: 14px;
+    background-color: #000;
+    border-radius: 50%;
+    box-shadow: none;
+}
+ 
+/* Organizing Dice Faces Dots */
+ 
+.dice-face[data-face="1"]{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dice-face[data-face="2"]{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dice-face[data-face="3"]{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dice-face[data-face="3"] .dot:nth-child(1){
+    transform: translateX(-25px);
+}
+.dice-face[data-face="3"] .dot:nth-child(3){
+    transform: translateX(25px);
+}
+.dice-face[data-face="4"]{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dice-face[data-face="4"] .dot:nth-child(1){
+    transform: translate(7px, -17px);
+}
+.dice-face[data-face="4"] .dot:nth-child(2){
+    transform: translate(36px, -16px)
+}
+.dice-face[data-face="4"] .dot:nth-child(3){
+    transform: translate(-32px, 22px)
+}
+.dice-face[data-face="4"] .dot:nth-child(4){
+    transform: translate(-3px, 22px)
+}
+ 
+.dice-face[data-face="5"]{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.dice-face[data-face="5"] .dot:nth-child(1){
+    transform: translate(7px, -17px);
+}
+.dice-face[data-face="5"] .dot:nth-child(2){
+    transform: translate(44px, -15px)
+}
+.dice-face[data-face="5"] .dot:nth-child(3){
+    transform: translate(1px, 4px)
+}
+.dice-face[data-face="5"] .dot:nth-child(4){
+    transform: translate(-42px, 24px)
+}
+ 
+.dice-face[data-face="5"] .dot:nth-child(5){
+    transform: translate(-4px, 25px)
+}
+.dice-face[data-face="6"] {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2px 15px;
+}
+.dice-face[data-face="6"] .dot {
+    transform: translate(14px, 7px);
+}
+ 
+ 
+/* Dice Face to show if Face value is set */
+ 
+.dice-face[data-face="1"] {
+    transform: translateZ(3.1em);
+}
+   
+.dice-face[data-face="6"] {
+transform: rotateY(90deg) translateZ(3.1em);
+}
+ 
+.dice-face[data-face="3"] {
+transform: rotateY(-90deg) translateZ(3.1em);
+}
+ 
+.dice-face[data-face="4"] {
+transform: rotateX(90deg) translateZ(3.1em);
+}
+ 
+.dice-face[data-face="5"] {
+transform: rotateX(-90deg) translateZ(3.1em);
+}
+ 
+.dice-face[data-face="2"] {
+transform: rotateY(-180deg) translateZ(3.1em);
+}
+ 
+/* Dice Rolling Animation */
+ 
+.dice.rolling{
+    animation:roll 1.2s ease-in-out infinite
+}
+@keyframes roll{
+    0%{
+        transform: rotateX(0deg) rotateZ(0deg);
+    }
+    25%{
+        transform: rotateX(90deg) rotateZ(90deg);
+    }
+    50%{
+        transform: rotateX(180deg) rotateZ(180deg);
+    }
+    75%{
+        transform: rotateX(360deg) rotateZ(360deg);
+    }
+    100%{
+        transform: rotateX(180deg) rotateZ(180deg);
+    }
+}
+.dice[data-face="1"]{
+    transform: rotateX(0deg) rotateZ(0deg);
+}
+.dice[data-face="2"]{
+    transform: rotateX(180deg) rotateZ(0deg);
+}
+.dice[data-face="3"]{
+    transform: rotateY(90deg) rotateZ(0deg);
+}
+.dice[data-face="4"]{
+    transform: rotateX(270deg) rotateZ(0deg);
+}
+.dice[data-face="5"]{
+    transform: rotateX(90deg) rotateZ(0deg);
+}
+.dice[data-face="6"]{
+    transform: rotateY(270deg) rotateZ(0deg);
 }
