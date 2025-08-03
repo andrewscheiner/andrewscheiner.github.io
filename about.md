@@ -3,7 +3,10 @@ layout: page
 title: About Me
 permalink: /about/
 ---
-Hello! My name is Andrew Scheiner and thank you for taking the time to check out my website hosted by GitHub pages. I am an incoming Technical Account Manager for LinkIt!, an assessment solution software company in New York City. I recently graduated from Dickinson College with a B.S. in Computer Science and Data Analytics. My experience involves sports analytics, game theory analysis, automated testing, and software development that I have gained through research and internships.
+Hello! My name is Andrew Scheiner and thank you for taking the time to check out my website. I am a Technical Account Manager for LinkIt!, an assessment solution software company in New York City. I grew up in Allentown, PA but I recently moved to Secaucus, NJ for work. I also recently graduated from Dickinson College with a B.S. in Computer Science and Data Analytics. My experience outside of my current job involves sports analytics, game theory analysis, automated testing, and software development that I have gained through research and work experience.
+
+#### Role at LinkIt!
+As an Technical Account Manager, I am responsible for solving technical support issues that educators need help with. LinkIt! is an everyday educational software solution that educators can use to adminster tests, sync grades, and generate extensive reports on their student's data. When technical complications arise, that's where I come in. Managing about 40 clients, I help manage rosters, upload data and analysis reports, and respond to any other applicable errors that our educations need assistance to solve. While my work mainly deals directly with the LinkIt! platform, I also work heavily with SQL coding and Salesforce, a customer resource management portal.
 
 #### Technical Background
 During Summer 2022, I completed a data analytics internship for Dickinson's athletics department where I helped analyze data on recruits and the men's basketball team. For the past two summers (2023 and 2024), I completed a software development internship at B. Braun Medical working with the R&D Digital Tech department in Allentown. My main task at B. Braun was to work on unit testing and code coverage for their DoseTrac© Enterprise software.
@@ -23,8 +26,4 @@ As for the fields I am particularly interested in: I love working on personal pr
 
 Please feel free to check out my socials included on the bottom of the page, and please email me with any questions you might have!
 
-
 ---
-
-
-**Thank you** to the maintainers and contributors at [the Jekyll Minima GitHub repo](https://github.com/jekyll/minima). I relied heavily on their coding concepts to build my site from the ground up.
