@@ -20,13 +20,8 @@ let spacing = 50;
 let p5Canvas;
 
 //correct answers and number of questions
-//Prof. Richeson (Dickinson College) lab answers for MATH171 - 4/30/2025
-let correctAnswers = [
-  "A", "C", "D", "A", "B",
-  "A", "D", "B", "C", "A",
-  "A", "C", "A", "C", "B",
-  "D", "C", "A", "B", "A"
-];
+//Prof. Tesman (Dickinson College) lab answers for Dec 2025
+let correctAnswers = ['D', 'A', 'C', 'C', 'B', 'D', 'D', 'A', 'C', 'C', 'B', 'A', 'D', 'D', 'C', 'B', 'D', 'A', 'B', 'A'];
 let numQs = correctAnswers.length;
 
 //export canvas
