@@ -778,7 +778,7 @@ table td {
 .article-content a {
   font-size: 1.6rem;
   font-weight: bold;
-  color: #006666;
+  color: #4169e1;
   text-decoration: none;
 }
 
@@ -804,7 +804,7 @@ table td {
   font-size: 2.2rem;
   margin-top: 40px;
   margin-bottom: 20px;
-  color: #003333;
+  color: #006666;
 }
 
 .project-row {
@@ -825,10 +825,16 @@ table td {
 .project-list a {
   font-size: 1.3rem;
   font-weight: 500;
-  color: #006666;
+  color: #4169e1;
   text-decoration: none;
 }
 
 .project-list a:hover {
   text-decoration: underline;
+  color: #4b0082;
+}
+
+.project-list a:visited {
+    font-weight: bold;
+    color: #4169e1
 }
