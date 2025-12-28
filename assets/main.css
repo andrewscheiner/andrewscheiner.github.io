@@ -809,17 +809,21 @@ table td {
 
 .project-row {
   display: flex;
+  justify-content: center;   /* centers content horizontally */
   align-items: flex-start;
   gap: 25px;
-  margin-bottom: 50px;
+  max-width: 900px;          /* controls total width like a table */
+  margin: 0 auto 50px auto;  /* centers the whole row on the page */
   padding-bottom: 25px;
   border-bottom: 1px solid #ddd;
 }
+
 
 .project-img {
   width: 180px;
   height: auto;
   border-radius: 8px;
+  display: block;
 }
 
 .project-list a {
