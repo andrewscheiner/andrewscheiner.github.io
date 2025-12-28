@@ -794,47 +794,41 @@ table td {
   font-style: italic;
 }
 
-/* Bigger title */
 .projects-title {
   font-size: 4rem;
   margin-bottom: 40px;
   text-align: center;
 }
 
-/* Row layout: Picture | Description */
+.project-section-header {
+  font-size: 2.2rem;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #003333;
+}
+
 .project-row {
   display: flex;
   align-items: flex-start;
-  gap: 20px;
+  gap: 25px;
   margin-bottom: 50px;
   padding-bottom: 25px;
   border-bottom: 1px solid #ddd;
 }
 
-/* Smaller images */
 .project-img {
   width: 180px;
   height: auto;
   border-radius: 8px;
 }
 
-/* Description area */
-.project-content {
-  flex: 1;
-}
-
-.project-content h2 {
-  margin-top: 0;
-  font-size: 1.8rem;
-}
-
-.project-content a {
+.project-list a {
   font-size: 1.3rem;
   font-weight: 500;
   color: #006666;
   text-decoration: none;
 }
 
-.project-content a:hover {
+.project-list a:hover {
   text-decoration: underline;
 }
