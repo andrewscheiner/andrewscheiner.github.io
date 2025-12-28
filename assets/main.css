@@ -745,3 +745,51 @@ table td {
 .site-footer {
     background-color: #006666
 }
+
+/* Bigger title */
+.featured-title {
+  font-size: 4rem;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Row layout: Picture | Description */
+.article-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Smaller images */
+.article-img {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Description area */
+.article-content {
+  flex: 1;
+}
+
+.article-content a {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #006666;
+  text-decoration: none;
+}
+
+.article-content a:hover {
+  text-decoration: underline;
+}
+
+.quote {
+  font-weight: bold;
+}
+
+.author {
+  font-style: italic;
+}
