@@ -84,8 +84,8 @@ Each threshold is then converted to a `log` value.
 
 For our usage of SPRT, we calculate LLR as we go. SPRT works with binary events. Thus, we must calculate an increment to LLR for both `event = 1` and `event = 0`. 
 
-- Each `event = 1` **adds** `ln(H1 / H0)`
-- Each `event = 0` **subtracts** `ln((1-H1)/(1-H0))`
+- Each `event = 1` **adds** `ln(Y / X)`
+- Each `event = 0` **subtracts** `ln((1-Y)/(1-X))`
 
 from LLR.
 
