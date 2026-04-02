@@ -86,7 +86,7 @@ From this scatterplot, we can see there is a strong, positive, and linear associ
 
 Now what you all have been waiting for! Here are some findings from my SHAP score for 2026.
 
-1. Top 10 Players by SHAP Score
+#### Top 10 Players by SHAP Score
 
 | Rank | Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
 |------|------|-----|---------|------------|--------|--------|
@@ -103,9 +103,9 @@ Now what you all have been waiting for! Here are some findings from my SHAP scor
 
 George Springer still has some life left in him even going into his age 36-37 season while younger studs Nick Kurtz and Geraldo Perdomo seem poised to build on their impressive 2025 campaigns.
 
-2. Breakout Candidates
+#### Breakout Candidates
 
-Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
+| Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
 |------|-----|---------|------------|--------|--------|
 | Ivan Herrera | 26 | C | 1949 | 92 | 355 |
 | Ben Rice | 27 | C | 1927 | 90 | 392 |
@@ -121,9 +121,9 @@ Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
 
 These are players with lower fantasy points from last season, but high SHAP scores. Yankees catcher/first baseman Ben Rice is the perfect example of a player who got incredibly unlucky last year with fantasy output but has all of the right underlying metrics to set himself up for success in 2026.
 
-3. Regression Candidates
+#### Regression Candidates
 
-Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
+| Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
 |------|-----|---------|------------|--------|--------|
 | Agustin Ramirez | 24 | C | 1157 | 40 | 391.5 |
 | Yainer Diaz | 27 | C | 1155 | 39 | 366 |
@@ -134,13 +134,14 @@ Name | Age | STD_POS | SHAP_Score | PCTile | FP2025 |
 | Anthony Volpe | 25 | SS | 970 | 20 | 386.5 |
 | Michael Harris II | 25 | OF | 985 | 22 | 435 |
 
-While I obviously want to see all baseball hitters succeed (especially one of my favorite currently players who falls on this list, Rangers third baseman Josh Jung), it is always important to highlight players to caution drafting and picking up. These regression candidates all scored over 300 fantasy points in 2025, but has lower than a 50th percentile SHAP score, meaning their underlying metrics do not indicate future success.
+While I obviously want to see all baseball hitters succeed (especially one of my favorite currently players who falls on this list, Rangers third baseman Josh Jung), it is always important to highlight players to caution drafting and picking up. These regression candidates all scored over 300 fantasy points in 2025, but have lower than a 50th percentile SHAP score, meaning their underlying metrics do not indicate future success.
 
 ### Wrapping Up
 
 While SHAP might not be as well known or fancy as a neural network, or an LLM model like ChatGPT, it makes the process of truly understanding our machine learning output so much easier. It's fascinating how we can truly take a deeper look into the number our computers are constantly churning to ask: where do our predictions come from? SHAP helps us answer that question using visuals that not many other options out there can. As someone who has been following fantasy sports since back when Ken Griffey Jr. was still on the Reds (granted it was his last few seasons), I am extremely excited to share my findings with you all and hopefully show how data science can make baseball (and all sports) incredibly entertaining. Thank you so much for reading.
 
 ---
+
 ### Appendix
 (1) Machine learning is a technique used by data scientists to train computers on collected data to make predictions about the unknown.\
 (2) LightGBM is a gradient-boosted decision tree. A decision tree is essentially a sequence of questions that help us make a decision about features of our model. We can implement LightGBM using the *lightbgm* Python package, which utilizes a *scikit-learn* styled API.\
